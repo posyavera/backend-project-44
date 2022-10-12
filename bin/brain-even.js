@@ -1,3 +1,3 @@
-import even from '../games/even.js';
+import evenOrNot from '../src/even.js';
 
-even();
+evenOrNot();
