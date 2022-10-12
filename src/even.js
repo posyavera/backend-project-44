@@ -7,11 +7,11 @@ const randomNumberGenerator = () => {
 
 const evenOrNot = () => {
   const name = readlineSync.question('May I have your name?');
-  console.log(`Hello ${name} !`);
+  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const figure = randomNumberGenerator();
-    console.log('Question: ', figure);
+    console.log('Question:', figure);
     const answer = readlineSync.question('Your answer:');
     const check1 = (figure % 2 === 0) && (answer === 'yes');
     const check2 = (figure % 2 !== 0) && (answer === 'no');

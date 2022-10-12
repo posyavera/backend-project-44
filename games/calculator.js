@@ -37,6 +37,6 @@ const calc = () => {
   };
   logicFunction(question, logic);
 };
-calc();
+// calc();
 
 export default calc;

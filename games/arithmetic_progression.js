@@ -24,7 +24,7 @@ const progression = () => {
     const hidedNumber = hidedNumberIndex();
     const rightAnswer = resultProgression[hidedNumber];
     resultProgression[hidedNumber] = '..';
-    const expression = resultProgression;
+    const expression = resultProgression.join(' ');
     return [expression, rightAnswer];
   };
   logicFunction(question, logicProgression);

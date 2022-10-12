@@ -1,7 +1,7 @@
 import logicFunction from '../src/index.js';
 
 const randomNumberGenerator = () => {
-  const figure = Math.floor(Math.random() * 100);
+  const figure = Math.floor(Math.random() * (20 - 1)) + 1;
   return figure;
 };
 
