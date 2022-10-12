@@ -9,7 +9,10 @@ const logicFunction = (question, task) => {
     const questionResult = task();
     console.log(`Question: ${questionResult[0]}`);
     const answer = readlineSync.question('Your answer: ');
-    const rightAnswer = questionResult[1].toString();
+    let rightAnswer = questionResult[1];
+    if (typeof rightAnswer !== 'string') {
+      rightAnswer = questionResult[1].toString();
+    }
     if (answer === rightAnswer) {
       console.log('Correct!');
     } else {
