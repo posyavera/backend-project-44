@@ -1,2 +1,1 @@
-
-even();
+#!/usr/bin/env node
